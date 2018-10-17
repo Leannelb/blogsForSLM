@@ -11,7 +11,14 @@ class Blog extends Model
 
     protected $table = 'blog';
  
+    public function tags() {
+        return $this->belongsToMany('\App\Models\Tag', 'blog_tags')->withTimestamps();
+    }
+
+
 }
+
+
 
 
 // ALTER TABLE `blog` ADD `postid` INT(11) NULL DEFAULT NULL AFTER `meta_description`;

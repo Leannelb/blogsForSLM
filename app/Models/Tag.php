@@ -10,4 +10,9 @@ class Tag extends Model
 
     protected $table = 'tag';
 
+
+    // public function blog() {
+    //     return $this->belongsToOne('\Model\Blog', 'blog');
+    // }
+
 }
