@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Blog extends Model
 {
-    protected $fillable = array ('id', 'postid', 'title', 'published_at', 'content', 'slug');
+    protected $fillable = array ('id', 'postid', 'published_at', 'title', 'published_at', 'content', 'slug', 'client_id', 'status_id', 'site_id', 'author_id');
 
     protected $table = 'blog';
  
